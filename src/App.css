@@ -1,0 +1,16 @@
+.App {
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid black;
+  width: 700px;
+  height: 600px;
+}
+
+.tree-button:hover {
+  cursor: pointer;
+}
+
+.tree-button {
+  vertical-align: middle;
+  margin-right: 10px;
+}

@@ -1,0 +1,84 @@
+[
+  {
+    id: '1',
+    name: 'database 1',
+    type: 'database',
+    checked: false,
+    expanded: false,
+    children: [
+      {
+        id: '1',
+        type: 'platform',
+        name: 'first platform',
+        checked: false
+      },
+      {
+        id: '2',
+        type: 'platform',
+        name: 'second platform',
+        checked: false,
+      },
+      {
+        id: '6',
+        type: 'platform',
+        name: 'sixth platform',
+        checked: false
+      },
+      {
+        id: '7',
+        type: 'platform',
+        name: 'seventh platform',
+        checked: false,
+      },
+      {
+        id: '8',
+        type: 'platform',
+        name: 'eighth platform',
+        checked: false
+      },
+      {
+        id: '9',
+        type: 'platform',
+        name: 'nineth platform',
+        checked: false,
+        expanded: false
+      }
+    ]
+  },
+  {
+    id: '2',
+    name: 'database 2',
+    type: 'database',
+    checked: false,
+    expanded: false,
+    children: [
+      {
+        id: '3',
+        type: 'platform',
+        name: 'third platform',
+        checked: false,
+      },
+    ]
+  },
+  {
+    id: '3',
+    name: 'database 3',
+    type: 'database',
+    checked: false,
+    expanded: false,
+    children: [
+      {
+        id: '4',
+        type: 'platform',
+        name: 'fourth platform',
+        checked: false
+      },
+      {
+        id: '5',
+        type: 'platform',
+        name: 'fifth platform',
+        checked: false,
+      }
+    ]
+  },
+]
