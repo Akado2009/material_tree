@@ -94,7 +94,7 @@ class App extends Component {
 
     let checkedChildren = data[dbIndex].children.filter((child) => child.checked === true)
     data[dbIndex].checked = checkedChildren.length !== 0 ? true : false
-    
+
     this.setState({
       data: data,
       currentObject: currentObject
@@ -137,18 +137,20 @@ class App extends Component {
             if(item.expanded) {
               item.children.map((child, j) => {
                 items.push (
-                  <FormControlLabel
-                        style={{marginLeft: '50px', marginTop: '-10px'}}
-                        key={`p${j}d${i}`}
-                        control={
-                          <Checkbox
-                            checked={this.state.data[i].children[j].checked}
-                            onClick={this.handlePlatformChange(`${i}`, `${j}`)}
-                            value="item"
-                          />
-                        }
-                        label={`${child.name} (samples: ${child.sample_count})`}
-                      />
+                  <span   key={`p${j}d${i}`}>
+                    <i className="expand-dot-line" role="presentation"/>
+                    <FormControlLabel
+                          style={{marginLeft: '-5px', marginTop: '-10px'}}
+                          control={
+                            <Checkbox
+                              checked={this.state.data[i].children[j].checked}
+                              onClick={this.handlePlatformChange(`${i}`, `${j}`)}
+                              value="item"
+                            />
+                          }
+                          label={`${child.name} (samples: ${child.sample_count})`}
+                        />
+                  </span>
                   )
               })
             }

@@ -4,3 +4,19 @@ body {
   font-family: sans-serif;
   text-align: left;
 }
+
+.expand-dot-line {
+  background-position: -68px -4px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  background-image: url("styling.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 32px;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+}
